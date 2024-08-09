@@ -3,14 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AD15 Cinema</title>
+    <title>Cinema Projection Info</title>
+    <style>
+        body {
+            background-color: #1c1c1c;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .cinema-program {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 900px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+        }
+
+        .cinema-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .cinema-header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .movie {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            background-color: #444;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .movie-poster {
+            flex: 1 1 150px;
+            max-width: 200px;
+            margin-right: 20px;
+        }
+
+        .movie-poster img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .movie-details {
+            flex: 2 1 400px;
+            text-align: left;
+        }
+
+        .movie-title {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .movie-time {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+
+        .movie-description {
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+
+        .watch-trailer {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #e50914;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .watch-trailer:hover {
+            background-color: #ff0a16;
+        }
+    </style>
 </head>
 <body>
-    <h1>AD15 Cinema Projection Updates</h1>
-    <p>Today's screening is <strong>BULLET TRAIN</strong> at 21:00h.</p>
+    <div class="cinema-program">
+        <div class="cinema-header">
+            <h1>Today's Cinema Program</h1>
+            <p>Updated: August 9, 2024</p>
+        </div>
 
-    <!-- Link to YouTube Video with Thumbnail -->
-    <h2>Watch the Trailer</h2>
-    <a href="https://www.youtube.com/watch?v=YoHD9XEInc0" target="_blank">
-        <img src="https://img.youtube.com/vi/YoHD9XEInc0/0.jpg" alt="Inception Trailer" width="560" height="315"></body>
+        <div class="movie">
+            <div class="movie-poster">
+                <img src="https://m.media-amazon.com/images/I/51l5XoE6otL._AC_.jpg" alt="Inception Poster">
+            </div>
+            <div class="movie-details">
+                <div class="movie-title">Inception</div>
+                <div class="movie-time">Screening at 7:00 PM</div>
+                <div class="movie-description">
+                    A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO.
+                </div>
+                <a href="https://www.youtube.com/watch?v=YoHD9XEInc0" target="_blank" class="watch-trailer">Watch Trailer</a>
+            </div>
+        </div>
+
+        <!-- Add more movies in the same format if needed -->
+    </div>
+</body>
 </html>
