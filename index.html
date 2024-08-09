@@ -10,11 +10,12 @@
             font-family: 'Arial', sans-serif;
             color: #fff;
             margin: 0;
-            padding: 0;
+            padding: 20px 0; /* Add top and bottom padding */
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh; /* Ensure the content takes at least the full viewport height */
+            box-sizing: border-box;
         }
 
         .cinema-program {
@@ -24,6 +25,7 @@
             width: 80%;
             max-width: 900px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+            box-sizing: border-box;
         }
 
         .cinema-header {
@@ -116,8 +118,6 @@
                 <a href="https://youtu.be/0IOsk2Vlc4o?si=aMYwN1qPr1CxkiTq" target="_blank" class="watch-trailer">Гледай Трейлър</a>
             </div>
         </div>
-
-        <!-- Add more movies in the same format if needed -->
     </div>
 </body>
 </html>
